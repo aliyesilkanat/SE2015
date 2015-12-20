@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SE2015
+namespace SE2015.UI_Layer.Student
 {
-    public partial class Form1 : Form
+    public partial class frmAnasayfa : Form
     {
-        public Form1()
+        public frmAnasayfa()
         {
             InitializeComponent();
         }
