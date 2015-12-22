@@ -17,6 +17,7 @@ namespace SE2015.UI_Layer
         public frmMain()
         {
             InitializeComponent();
+            
             switchForm(menuStrip.Items[0], new frmAnasayfa());
         }
 

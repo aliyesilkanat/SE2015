@@ -7,5 +7,12 @@ namespace SE2015.Application_Layer.Administration
 {
     class Student : Account
     {
+        private bool solvedTest=false;
+
+        public bool SolvedTest
+        {
+            get { return solvedTest; }
+            set { solvedTest = value; }
+        }
     }
 }

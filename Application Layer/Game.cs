@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json.Linq;
+using SE2015.Application_Layer.Administration;
 
 namespace SE2015.Application_Layer
 {
@@ -10,7 +11,13 @@ namespace SE2015.Application_Layer
     {
         private static Game instance;
         private List<Subject> subjects;
+        private Student student;
 
+        public Student Student
+        {
+            get { return student; }
+            set { student = value; }
+        }
         internal List<Subject> Subjects
         {
             get { return subjects; }
@@ -30,6 +37,8 @@ namespace SE2015.Application_Layer
 
         internal void LoadJson(string jsonFile)
         {
+
+            student = new Student();
             //Load subjects
             foreach (var subjectIterator in JObject.Parse(jsonFile)["courses"].ToList())
             {

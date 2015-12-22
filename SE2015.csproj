@@ -78,6 +78,8 @@
     <Compile Include="Application Layer\Test.cs" />
     <Compile Include="Data Layer\UserData.cs" />
     <Compile Include="Logical Layer\QuestionFormManager.cs" />
+    <Compile Include="Logical Layer\StudentTestValidation.cs" />
+    <Compile Include="Logical Layer\TestTimer.cs" />
     <Compile Include="UI Layer\Student\frmAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>

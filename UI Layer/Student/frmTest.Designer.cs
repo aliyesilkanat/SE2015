@@ -40,7 +40,7 @@
             this.radioChoice3 = new System.Windows.Forms.RadioButton();
             this.radioChoice4 = new System.Windows.Forms.RadioButton();
             this.btnNextQuestion = new System.Windows.Forms.Button();
-            this.groupBoxResult = new System.Windows.Forms.GroupBox();
+            this.lblTimer = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBoxQuestions.SuspendLayout();
             this.SuspendLayout();
@@ -100,7 +100,7 @@
             // 
             // groupBoxQuestions
             // 
-            this.groupBoxQuestions.Controls.Add(this.groupBoxResult);
+            this.groupBoxQuestions.Controls.Add(this.lblTimer);
             this.groupBoxQuestions.Controls.Add(this.btnNextQuestion);
             this.groupBoxQuestions.Controls.Add(this.radioChoice4);
             this.groupBoxQuestions.Controls.Add(this.radioChoice3);
@@ -121,7 +121,7 @@
             this.lblQuestionText.AutoSize = true;
             this.lblQuestionText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblQuestionText.Location = new System.Drawing.Point(31, 32);
-            this.lblQuestionText.MaximumSize = new System.Drawing.Size(100, 0);
+            this.lblQuestionText.MaximumSize = new System.Drawing.Size(500, 0);
             this.lblQuestionText.Name = "lblQuestionText";
             this.lblQuestionText.Size = new System.Drawing.Size(61, 24);
             this.lblQuestionText.TabIndex = 0;
@@ -179,17 +179,18 @@
             this.btnNextQuestion.TabIndex = 2;
             this.btnNextQuestion.Text = "İşaretle ve Geç";
             this.btnNextQuestion.UseVisualStyleBackColor = true;
+            this.btnNextQuestion.Click += new System.EventHandler(this.btnNextQuestion_Click);
             // 
-            // groupBoxResult
+            // lblTimer
             // 
-            this.groupBoxResult.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBoxResult.Location = new System.Drawing.Point(3, 209);
-            this.groupBoxResult.Name = "groupBoxResult";
-            this.groupBoxResult.Size = new System.Drawing.Size(937, 100);
-            this.groupBoxResult.TabIndex = 3;
-            this.groupBoxResult.TabStop = false;
-            this.groupBoxResult.Text = "Sonuç";
-            this.groupBoxResult.Visible = false;
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTimer.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblTimer.Location = new System.Drawing.Point(27, 217);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(51, 20);
+            this.lblTimer.TabIndex = 3;
+            this.lblTimer.Text = "label3";
             // 
             // frmTest
             // 
@@ -225,6 +226,6 @@
         private System.Windows.Forms.RadioButton radioChoice2;
         private System.Windows.Forms.RadioButton radioChoice1;
         private System.Windows.Forms.Button btnNextQuestion;
-        private System.Windows.Forms.GroupBox groupBoxResult;
+        private System.Windows.Forms.Label lblTimer;
     }
 }
