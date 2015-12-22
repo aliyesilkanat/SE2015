@@ -72,7 +72,12 @@
   <ItemGroup>
     <Compile Include="Application Layer\Administration\Account.cs" />
     <Compile Include="Application Layer\Administration\Student.cs" />
+    <Compile Include="Application Layer\Game.cs" />
+    <Compile Include="Application Layer\Question.cs" />
+    <Compile Include="Application Layer\Subject.cs" />
+    <Compile Include="Application Layer\Test.cs" />
     <Compile Include="Data Layer\UserData.cs" />
+    <Compile Include="Logical Layer\QuestionFormManager.cs" />
     <Compile Include="UI Layer\Student\frmAnasayfa.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -7,18 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace SE2015.UI_Layer.Student
 {
     public partial class frmOneCourse : Form
     {
         private Panel panelFormContainer;
         private Form selectedForm;
+        private int courseIndex;
+      
 
-        public frmOneCourse(Panel panelFormContainer, Form selectedForm)
+        public frmOneCourse(Panel panelFormContainer, Form selectedForm,int courseIndex)
         {
             InitializeComponent();
             this.panelFormContainer = panelFormContainer;
             this.selectedForm = selectedForm;
+            this.courseIndex = courseIndex;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -34,10 +38,12 @@ namespace SE2015.UI_Layer.Student
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             selectedForm.Dispose();
-            selectedForm = new frmTest();
+            selectedForm = new frmTest(courseIndex);
             selectedForm.TopLevel = false;
             panelFormContainer.Controls.Add(selectedForm);
             selectedForm.Show();
         }
+
+  
     }
 }

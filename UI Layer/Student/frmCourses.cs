@@ -25,7 +25,7 @@ namespace SE2015.UI_Layer.Student
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             selectedForm.Dispose();
-            selectedForm = new frmOneCourse(panelFormContainer,selectedForm);
+            selectedForm = new frmOneCourse(panelFormContainer,selectedForm,0);
             toolStripMenuItem.Enabled = true;
             selectedForm.TopLevel = false;
             panelFormContainer.Controls.Add(selectedForm);
