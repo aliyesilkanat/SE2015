@@ -105,8 +105,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBoxCourseExperiments;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.GroupBox groupBoxCourseTests;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        public System.Windows.Forms.LinkLabel linkLabel1;
+        public System.Windows.Forms.LinkLabel linkLabel2;
     }
 }

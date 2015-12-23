@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using SE2015.Logical_Layer;
 
 namespace SE2015.UI_Layer.Student
 {
@@ -14,7 +15,7 @@ namespace SE2015.UI_Layer.Student
         private ToolStripMenuItem toolStripMenuItem;
         private Form selectedForm;
         private Panel panelFormContainer;
-        public frmCourses(ToolStripMenuItem toolStripMenuItem, Form selectedForm, Panel panelFormContainer)
+        public frmCourses(ToolStripMenuItem toolStripMenuItem,ref Form selectedForm, Panel panelFormContainer)
         {
             InitializeComponent();
             this.toolStripMenuItem = toolStripMenuItem;
@@ -24,8 +25,12 @@ namespace SE2015.UI_Layer.Student
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            clickCourse();    
+        }
+        public void clickCourse() {
             selectedForm.Dispose();
-            selectedForm = new frmOneCourse(panelFormContainer,selectedForm,0,toolStripMenuItem);
+            selectedForm = new frmOneCourse(panelFormContainer, selectedForm, 0, toolStripMenuItem);
+            FormStateManager.Instance = selectedForm;
             toolStripMenuItem.Enabled = true;
             selectedForm.TopLevel = false;
             panelFormContainer.Controls.Add(selectedForm);

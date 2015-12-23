@@ -77,6 +77,8 @@
     <Compile Include="Application Layer\Subject.cs" />
     <Compile Include="Application Layer\Test.cs" />
     <Compile Include="Data Layer\UserData.cs" />
+    <Compile Include="Logical Layer\FormStateManager.cs" />
+    <Compile Include="Logical Layer\MessageStatus.cs" />
     <Compile Include="Logical Layer\QuestionFormManager.cs" />
     <Compile Include="Logical Layer\StudentTestValidation.cs" />
     <Compile Include="Logical Layer\TestTimer.cs" />
@@ -120,6 +122,9 @@
     <Compile Include="UI Layer\Student\frmTest.Designer.cs">
       <DependentUpon>frmTest.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmTest_btnStartTest_Click.sequencediagram.layout">
+      <DependentUpon>frmTest_btnStartTest_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI Layer\Student\frmAnasayfa.resx">
       <DependentUpon>frmAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +153,7 @@
       <DependentUpon>frmTest.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="frmTest_btnStartTest_Click.sequencediagram" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

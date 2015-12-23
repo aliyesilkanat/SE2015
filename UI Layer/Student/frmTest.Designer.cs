@@ -34,13 +34,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxQuestions = new System.Windows.Forms.GroupBox();
-            this.lblQuestionText = new System.Windows.Forms.Label();
-            this.radioChoice1 = new System.Windows.Forms.RadioButton();
-            this.radioChoice2 = new System.Windows.Forms.RadioButton();
-            this.radioChoice3 = new System.Windows.Forms.RadioButton();
-            this.radioChoice4 = new System.Windows.Forms.RadioButton();
-            this.btnNextQuestion = new System.Windows.Forms.Button();
             this.lblTimer = new System.Windows.Forms.Label();
+            this.btnNextQuestion = new System.Windows.Forms.Button();
+            this.radioChoice4 = new System.Windows.Forms.RadioButton();
+            this.radioChoice3 = new System.Windows.Forms.RadioButton();
+            this.radioChoice2 = new System.Windows.Forms.RadioButton();
+            this.radioChoice1 = new System.Windows.Forms.RadioButton();
+            this.lblQuestionText = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBoxQuestions.SuspendLayout();
             this.SuspendLayout();
@@ -116,49 +116,26 @@
             this.groupBoxQuestions.Text = "Test";
             this.groupBoxQuestions.Visible = false;
             // 
-            // lblQuestionText
+            // lblTimer
             // 
-            this.lblQuestionText.AutoSize = true;
-            this.lblQuestionText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblQuestionText.Location = new System.Drawing.Point(31, 32);
-            this.lblQuestionText.MaximumSize = new System.Drawing.Size(500, 0);
-            this.lblQuestionText.Name = "lblQuestionText";
-            this.lblQuestionText.Size = new System.Drawing.Size(61, 24);
-            this.lblQuestionText.TabIndex = 0;
-            this.lblQuestionText.Text = "Soruu";
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTimer.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblTimer.Location = new System.Drawing.Point(27, 217);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(51, 20);
+            this.lblTimer.TabIndex = 3;
+            this.lblTimer.Text = "label3";
             // 
-            // radioChoice1
+            // btnNextQuestion
             // 
-            this.radioChoice1.AutoSize = true;
-            this.radioChoice1.Location = new System.Drawing.Point(27, 176);
-            this.radioChoice1.Name = "radioChoice1";
-            this.radioChoice1.Size = new System.Drawing.Size(85, 17);
-            this.radioChoice1.TabIndex = 1;
-            this.radioChoice1.TabStop = true;
-            this.radioChoice1.Text = "radioButton1";
-            this.radioChoice1.UseVisualStyleBackColor = true;
-            // 
-            // radioChoice2
-            // 
-            this.radioChoice2.AutoSize = true;
-            this.radioChoice2.Location = new System.Drawing.Point(130, 176);
-            this.radioChoice2.Name = "radioChoice2";
-            this.radioChoice2.Size = new System.Drawing.Size(85, 17);
-            this.radioChoice2.TabIndex = 1;
-            this.radioChoice2.TabStop = true;
-            this.radioChoice2.Text = "radioButton1";
-            this.radioChoice2.UseVisualStyleBackColor = true;
-            // 
-            // radioChoice3
-            // 
-            this.radioChoice3.AutoSize = true;
-            this.radioChoice3.Location = new System.Drawing.Point(231, 176);
-            this.radioChoice3.Name = "radioChoice3";
-            this.radioChoice3.Size = new System.Drawing.Size(85, 17);
-            this.radioChoice3.TabIndex = 1;
-            this.radioChoice3.TabStop = true;
-            this.radioChoice3.Text = "radioButton1";
-            this.radioChoice3.UseVisualStyleBackColor = true;
+            this.btnNextQuestion.Location = new System.Drawing.Point(436, 176);
+            this.btnNextQuestion.Name = "btnNextQuestion";
+            this.btnNextQuestion.Size = new System.Drawing.Size(92, 23);
+            this.btnNextQuestion.TabIndex = 2;
+            this.btnNextQuestion.Text = "İşaretle ve Geç";
+            this.btnNextQuestion.UseVisualStyleBackColor = true;
+            this.btnNextQuestion.Click += new System.EventHandler(this.btnNextQuestion_Click);
             // 
             // radioChoice4
             // 
@@ -171,26 +148,49 @@
             this.radioChoice4.Text = "radioButton1";
             this.radioChoice4.UseVisualStyleBackColor = true;
             // 
-            // btnNextQuestion
+            // radioChoice3
             // 
-            this.btnNextQuestion.Location = new System.Drawing.Point(436, 176);
-            this.btnNextQuestion.Name = "btnNextQuestion";
-            this.btnNextQuestion.Size = new System.Drawing.Size(92, 23);
-            this.btnNextQuestion.TabIndex = 2;
-            this.btnNextQuestion.Text = "İşaretle ve Geç";
-            this.btnNextQuestion.UseVisualStyleBackColor = true;
-            this.btnNextQuestion.Click += new System.EventHandler(this.btnNextQuestion_Click);
+            this.radioChoice3.AutoSize = true;
+            this.radioChoice3.Location = new System.Drawing.Point(231, 176);
+            this.radioChoice3.Name = "radioChoice3";
+            this.radioChoice3.Size = new System.Drawing.Size(85, 17);
+            this.radioChoice3.TabIndex = 1;
+            this.radioChoice3.TabStop = true;
+            this.radioChoice3.Text = "radioButton1";
+            this.radioChoice3.UseVisualStyleBackColor = true;
             // 
-            // lblTimer
+            // radioChoice2
             // 
-            this.lblTimer.AutoSize = true;
-            this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTimer.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblTimer.Location = new System.Drawing.Point(27, 217);
-            this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(51, 20);
-            this.lblTimer.TabIndex = 3;
-            this.lblTimer.Text = "label3";
+            this.radioChoice2.AutoSize = true;
+            this.radioChoice2.Location = new System.Drawing.Point(130, 176);
+            this.radioChoice2.Name = "radioChoice2";
+            this.radioChoice2.Size = new System.Drawing.Size(85, 17);
+            this.radioChoice2.TabIndex = 1;
+            this.radioChoice2.TabStop = true;
+            this.radioChoice2.Text = "radioButton1";
+            this.radioChoice2.UseVisualStyleBackColor = true;
+            // 
+            // radioChoice1
+            // 
+            this.radioChoice1.AutoSize = true;
+            this.radioChoice1.Location = new System.Drawing.Point(27, 176);
+            this.radioChoice1.Name = "radioChoice1";
+            this.radioChoice1.Size = new System.Drawing.Size(85, 17);
+            this.radioChoice1.TabIndex = 1;
+            this.radioChoice1.TabStop = true;
+            this.radioChoice1.Text = "radioButton1";
+            this.radioChoice1.UseVisualStyleBackColor = true;
+            // 
+            // lblQuestionText
+            // 
+            this.lblQuestionText.AutoSize = true;
+            this.lblQuestionText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblQuestionText.Location = new System.Drawing.Point(31, 32);
+            this.lblQuestionText.MaximumSize = new System.Drawing.Size(500, 0);
+            this.lblQuestionText.Name = "lblQuestionText";
+            this.lblQuestionText.Size = new System.Drawing.Size(61, 24);
+            this.lblQuestionText.TabIndex = 0;
+            this.lblQuestionText.Text = "Soruu";
             // 
             // frmTest
             // 
@@ -216,16 +216,16 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnStartTest;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBoxQuestions;
         private System.Windows.Forms.Label lblQuestionText;
-        private System.Windows.Forms.RadioButton radioChoice4;
-        private System.Windows.Forms.RadioButton radioChoice3;
-        private System.Windows.Forms.RadioButton radioChoice2;
-        private System.Windows.Forms.RadioButton radioChoice1;
-        private System.Windows.Forms.Button btnNextQuestion;
         private System.Windows.Forms.Label lblTimer;
+        public System.Windows.Forms.Button btnStartTest;
+        public System.Windows.Forms.RadioButton radioChoice4;
+        public System.Windows.Forms.RadioButton radioChoice3;
+        public System.Windows.Forms.RadioButton radioChoice2;
+        public System.Windows.Forms.RadioButton radioChoice1;
+        public System.Windows.Forms.Button btnNextQuestion;
     }
 }

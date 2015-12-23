@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5d885e6c-87fc-486f-8c94-c991a0f86340" name="smsng@SMSNG-SMSNG 2015-12-23 20:01:51" runUser="smsng-smsng\smsng" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="125f4e30-2029-4c74-aa74-3914b1a7b57d">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="smsng_SMSNG-SMSNG 2015-12-23 20_01_51">
+      <DeploymentItem filename="C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\bin\Debug\SE2015.exe" />
+      <DeploymentItem filename="C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-12-23T20:01:51.0338272+02:00" queuing="2015-12-23T20:01:52.0232414+02:00" start="2015-12-23T20:01:52.0544414+02:00" finish="2015-12-23T20:03:59.3930742+02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="SMSNG-SMSNG" outcome="Error" timestamp="2015-12-23T20:01:59.4150551+02:00">
+        <Text>One of the background threads threw exception: 
+System.ArgumentException: Hedef dizi yeterince uzun değildi. destIndex ve uzunluk ile dizinin alt sınırlarını denetleyin.
+   konum: System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   konum: System.Windows.Forms.PropertyStore.SetObject(Int32 key, Object value)
+   konum: System.Windows.Forms.Control.set_CacheTextInternal(Boolean value)
+   konum: System.Windows.Forms.Control.GetPreferredSize(Size proposedSize)
+   konum: System.Windows.Forms.Label.GetPreferredSize(Size proposedSize)
+   konum: System.Windows.Forms.Control.get_PreferredSize()
+   konum: System.Windows.Forms.Label.AdjustSize()
+   konum: System.Windows.Forms.Label.OnTextChanged(EventArgs e)
+   konum: System.Windows.Forms.Control.set_Text(String value)
+   konum: System.Windows.Forms.Label.set_Text(String value)
+   konum: SE2015.UI_Layer.Student.frmTest.DisplayTimer(Int32 timerCounter) C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\UI Layer\Student\frmTest.cs içinde: satır 118
+   konum: SE2015.UI_Layer.Student.frmTest.TickExternal(Int32 timer) C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\UI Layer\Student\frmTest.cs içinde: satır 108
+   konum: SE2015.Logical_Layer.TestTimer.Tick(Object state) C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\Logical Layer\TestTimer.cs içinde: satır 45
+   konum: System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   konum: System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   konum: System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   konum: System.Threading.TimerQueueTimer.CallCallback()
+   konum: System.Threading.TimerQueueTimer.Fire()
+   konum: System.Threading.TimerQueue.FireNextTimers()
+   konum: System.Threading.TimerQueue.AppDomainTimerCallback()</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TimerTest" storage="c:\users\smsng\documents\visual studio 2010\projects\testproject\bin\debug\testproject.dll" id="4de5f492-6ab0-7c81-1374-b43f50388b8d">
+      <Execution id="5e58de22-6a87-4036-9431-bcb4192dc3dc" />
+      <TestMethod codeBase="C:/Users/smsng/Documents/Visual Studio 2010/Projects/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.TestingFormTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TimerTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4de5f492-6ab0-7c81-1374-b43f50388b8d" executionId="5e58de22-6a87-4036-9431-bcb4192dc3dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5e58de22-6a87-4036-9431-bcb4192dc3dc" testId="4de5f492-6ab0-7c81-1374-b43f50388b8d" testName="TimerTest" computerName="SMSNG-SMSNG" duration="00:00:06.2920546" startTime="2015-12-23T20:01:52.0700415+02:00" endTime="2015-12-23T20:01:59.2590548+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e58de22-6a87-4036-9431-bcb4192dc3dc">
+    </UnitTestResult>
+  </Results>
+</TestRun>

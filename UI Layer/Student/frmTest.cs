@@ -14,11 +14,27 @@ namespace SE2015.UI_Layer.Student
     {
         private int courseIndex;
         private QuestionFormManager formManager;
+
+        internal QuestionFormManager FormManager
+        {
+            get { return formManager; }
+            set { formManager = value; }
+        }
         List<RadioButton> choices = new List<RadioButton>();
         private Form selectedForm;
         private Panel panelFormContainer;
         private ToolStripMenuItem menu;
+        private bool testCase = false;
 
+        public bool TestCase
+        {
+            get { return testCase; }
+            set
+            {
+                testCase = value;
+                formManager.TestCase = value;
+            }
+        }
 
 
         public frmTest(int courseIndex, Form selectedForm, Panel panelFormContainer, ToolStripMenuItem menu)
@@ -57,7 +73,7 @@ namespace SE2015.UI_Layer.Student
             {
 
                 selectedForm.Dispose();
-                selectedForm = new frmCourses(menu, selectedForm, panelFormContainer);
+                selectedForm = new frmCourses(menu, ref selectedForm, panelFormContainer);
                 selectedForm.TopLevel = false;
                 panelFormContainer.Controls.Add(selectedForm);
                 selectedForm.Show();
@@ -71,15 +87,21 @@ namespace SE2015.UI_Layer.Student
             if (timer == 0)
             {
 
-                BeginInvoke((MethodInvoker)delegate
+                if (!StudentTestValidation.Instance().StudentTookTest)
                 {
-                    MessageBox.Show("Süreniz doldu!");
-                    selectedForm.Dispose();
-                    selectedForm = new frmCourses(menu, selectedForm, panelFormContainer);
-                    selectedForm.TopLevel = false;
-                    panelFormContainer.Controls.Add(selectedForm);
-                    selectedForm.Show();
-                });
+                    BeginInvoke((MethodInvoker)delegate
+                        {
+                            MessageStatus.Instance.IsOpen = true;
+                            MessageStatus.Instance.Text = "Süreniz doldu!";
+                            MessageBox.Show("Süreniz doldu!");
+                            MessageStatus.Instance.IsOpen = false;
+                            selectedForm.Dispose();
+                            selectedForm = new frmCourses(menu, ref selectedForm, panelFormContainer);
+                            selectedForm.TopLevel = false;
+                            panelFormContainer.Controls.Add(selectedForm);
+                            selectedForm.Show();
+                        });
+                }
             }
             else
             {

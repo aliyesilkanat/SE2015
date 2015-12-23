@@ -7,18 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using SE2015.UI_Layer.Student;
+using SE2015.Logical_Layer;
 
 namespace SE2015.UI_Layer
 {
     public partial class frmMain : Form
     {
-        private Form selectedForm;
+        public Form selectedForm;
         private ToolStripMenuItem selectedMenuItem;
+   
+    
+
         public frmMain()
         {
             InitializeComponent();
             
-            switchForm(menuStrip.Items[0], new frmAnasayfa());
+            
+          
         }
 
         private void anasayfaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -34,6 +39,7 @@ namespace SE2015.UI_Layer
                 selectedMenuItem.Enabled = true;
             }
             selectedForm = form;
+            FormStateManager.Instance = form;
             selectedForm.TopLevel = false;
             panelFormContainer.Controls.Add(selectedForm);
             selectedForm.Show();
@@ -51,7 +57,12 @@ namespace SE2015.UI_Layer
 
         private void konularToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            switchForm(sender, new frmCourses(sender as ToolStripMenuItem, selectedForm, panelFormContainer));
+            switchForm(sender, new frmCourses(sender as ToolStripMenuItem, ref selectedForm, panelFormContainer));
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            menuStrip.Items[0].PerformClick();
         }
     }
 }

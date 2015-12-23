@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c8579f2a-9bf5-4beb-bfe7-465427ed412d" name="smsng@SMSNG-SMSNG 2015-12-23 14:44:38" runUser="smsng-smsng\smsng" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="125f4e30-2029-4c74-aa74-3914b1a7b57d">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="smsng_SMSNG-SMSNG 2015-12-23 14_44_38">
+      <DeploymentItem filename="C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\bin\Debug\SE2015.exe" />
+      <DeploymentItem filename="C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-12-23T14:44:38.2878345+02:00" queuing="2015-12-23T14:44:39.2868531+02:00" start="2015-12-23T14:44:39.3268532+02:00" finish="2015-12-23T14:44:40.7028554+02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="SMSNG-SMSNG" outcome="Error" timestamp="2015-12-23T14:44:40.5728553+02:00">
+        <Text>One of the background threads threw exception: 
+System.InvalidOperationException: Çapraz iş parçacığı işlemi geçerli değil: 'lblTimer' denetimine oluşturulduğu iş parçacığı dışında başka bir iş parçacığından erişildi.
+   konum: System.Windows.Forms.Control.get_Handle()
+   konum: System.Windows.Forms.Control.set_WindowText(String value)
+   konum: System.Windows.Forms.Control.set_Text(String value)
+   konum: System.Windows.Forms.Label.set_Text(String value)
+   konum: SE2015.UI_Layer.Student.frmTest.DisplayTimer(Int32 timerCounter) C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\UI Layer\Student\frmTest.cs içinde: satır 108
+   konum: SE2015.UI_Layer.Student.frmTest.TickExternal(Int32 timer) C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\UI Layer\Student\frmTest.cs içinde: satır 98
+   konum: SE2015.Logical_Layer.TestTimer.Tick(Object state) C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\Logical Layer\TestTimer.cs içinde: satır 48
+   konum: System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   konum: System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   konum: System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   konum: System.Threading.TimerQueueTimer.CallCallback()
+   konum: System.Threading.TimerQueueTimer.Fire()
+   konum: System.Threading.TimerQueue.FireNextTimers()
+   konum: System.Threading.TimerQueue.AppDomainTimerCallback()</Text>
+      </RunInfo>
+      <RunInfo computerName="SMSNG-SMSNG" outcome="Error" timestamp="2015-12-23T14:44:40.7028554+02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="StartTest" storage="c:\users\smsng\documents\visual studio 2010\projects\testproject\bin\debug\testproject.dll" id="006ed76c-4ae1-6e18-512c-316022f11344">
+      <Execution id="d09e7183-6a3a-40fc-92aa-c89a8c0826ed" />
+      <TestMethod codeBase="C:/Users/smsng/Documents/Visual Studio 2010/Projects/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.TestingFormTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="StartTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="006ed76c-4ae1-6e18-512c-316022f11344" executionId="d09e7183-6a3a-40fc-92aa-c89a8c0826ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d09e7183-6a3a-40fc-92aa-c89a8c0826ed" testId="006ed76c-4ae1-6e18-512c-316022f11344" testName="StartTest" computerName="SMSNG-SMSNG" duration="00:00:01.3300018" startTime="2015-12-23T14:44:39.3728536+02:00" endTime="2015-12-23T14:44:40.7028554+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d09e7183-6a3a-40fc-92aa-c89a8c0826ed">
+    </UnitTestResult>
+  </Results>
+</TestRun>

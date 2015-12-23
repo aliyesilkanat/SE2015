@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE2015", "SE2015.csproj", "{F608D357-AC92-461C-892D-7C2F80C345D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "..\TestProject\TestProject.csproj", "{9F762DD7-D351-4321-92C1-3F81352F4464}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DFD11A85-7218-4452-9E96-BE9D2157CE9A}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		SE2015.vsmdi = SE2015.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SE2015.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -23,6 +35,16 @@ Global
 		{F608D357-AC92-461C-892D-7C2F80C345D7}.Release|Mixed Platforms.Build.0 = Release|x86
 		{F608D357-AC92-461C-892D-7C2F80C345D7}.Release|x86.ActiveCfg = Release|x86
 		{F608D357-AC92-461C-892D-7C2F80C345D7}.Release|x86.Build.0 = Release|x86
+		{9F762DD7-D351-4321-92C1-3F81352F4464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F762DD7-D351-4321-92C1-3F81352F4464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F762DD7-D351-4321-92C1-3F81352F4464}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9F762DD7-D351-4321-92C1-3F81352F4464}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9F762DD7-D351-4321-92C1-3F81352F4464}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9F762DD7-D351-4321-92C1-3F81352F4464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F762DD7-D351-4321-92C1-3F81352F4464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F762DD7-D351-4321-92C1-3F81352F4464}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9F762DD7-D351-4321-92C1-3F81352F4464}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9F762DD7-D351-4321-92C1-3F81352F4464}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

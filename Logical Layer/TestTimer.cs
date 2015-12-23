@@ -17,6 +17,10 @@ namespace SE2015.Logical_Layer
         public int Index
         {
             get { return index; }
+            set
+            {
+                index = value;
+            }
 
         }
         public SE2015.UI_Layer.Student.frmTest TimerForm
@@ -37,15 +41,15 @@ namespace SE2015.Logical_Layer
         private void Tick(object state)
         {
             index--;
-           
-           
+
+            timerForm.TickExternal(index);
             if (index==0)
             {
-                Game.Instance().Student.SolvedTest = true;
-                counter.Change(Timeout.Infinite, Timeout.Infinite);
-                counter.Dispose();
                 
-            } timerForm.TickExternal(index);
+                counter.Change(Timeout.Infinite, Timeout.Infinite);
+  
+                Game.Instance().Student.SolvedTest = true;
+            } 
         }
 
         public static TestTimer Instance()

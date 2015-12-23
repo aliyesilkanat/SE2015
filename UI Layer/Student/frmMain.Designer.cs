@@ -32,9 +32,9 @@
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.konularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelFormContainer = new System.Windows.Forms.Panel();
-            this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,12 @@
             this.profilToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.profilToolStripMenuItem.Text = "Profil";
             // 
+            // istatistiklerToolStripMenuItem
+            // 
+            this.istatistiklerToolStripMenuItem.Name = "istatistiklerToolStripMenuItem";
+            this.istatistiklerToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
+            // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
@@ -87,12 +93,6 @@
             this.panelFormContainer.Size = new System.Drawing.Size(1215, 743);
             this.panelFormContainer.TabIndex = 1;
             // 
-            // istatistiklerToolStripMenuItem
-            // 
-            this.istatistiklerToolStripMenuItem.Name = "istatistiklerToolStripMenuItem";
-            this.istatistiklerToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,6 +104,7 @@
             this.Name = "frmMain";
             this.Text = "ScienceLab";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -115,10 +116,10 @@
 
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem konularToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem profilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.Panel panelFormContainer;
         private System.Windows.Forms.ToolStripMenuItem istatistiklerToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem konularToolStripMenuItem;
     }
 }

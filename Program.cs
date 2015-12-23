@@ -26,7 +26,6 @@ namespace SE2015
             Game.Instance().LoadJson(jsonFile);
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
 
-
             Application.Run(new frmMain());
         }
     }

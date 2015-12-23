@@ -32,6 +32,7 @@ namespace SE2015.UI_Layer.Student
         {
             selectedForm.Dispose();
             selectedForm = new frmExperimentContainer();
+            FormStateManager.Instance = selectedForm;
             selectedForm.TopLevel = false;
             panelFormContainer.Controls.Add(selectedForm);
             selectedForm.Show();
@@ -41,11 +42,16 @@ namespace SE2015.UI_Layer.Student
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+          
+                linkLabel2Click();
+        }
+        public void linkLabel2Click() {
             if (!StudentTestValidation.Instance().StudentTookTest)
             {
 
                 selectedForm.Dispose();
                 selectedForm = new frmTest(courseIndex, selectedForm, panelFormContainer, menu);
+                FormStateManager.Instance = selectedForm;
                 selectedForm.TopLevel = false;
                 panelFormContainer.Controls.Add(selectedForm);
                 selectedForm.Show();
@@ -55,7 +61,6 @@ namespace SE2015.UI_Layer.Student
                 MessageBox.Show("Bu testi daha önce çözdünüz.");
             }
         }
-
-  
+    
     }
 }

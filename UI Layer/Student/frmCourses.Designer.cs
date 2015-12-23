@@ -106,7 +106,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBoxCoursesList;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        public System.Windows.Forms.LinkLabel linkLabel1;
 
     }
 }
