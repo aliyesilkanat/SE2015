@@ -53,5 +53,14 @@ namespace SE2015.UI_Layer
         {
             switchForm(sender, new frmCourses(sender as ToolStripMenuItem, selectedForm, panelFormContainer));
         }
+        //private void profilToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    switchForm(sender, new frmProfil(sender as ToolStripMenuItem, selectedForm, panelFormContainer));
+        //}
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            switchForm(sender, new Login(sender as ToolStripMenuItem, selectedForm, panelFormContainer));
+        }
     }
 }

@@ -120,6 +120,12 @@
     <Compile Include="UI Layer\Student\frmTest.Designer.cs">
       <DependentUpon>frmTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI Layer\Student\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI Layer\Student\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="UI Layer\Student\frmAnasayfa.resx">
       <DependentUpon>frmAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +143,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UI Layer\Student\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -146,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI Layer\Student\frmTest.resx">
       <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Layer\Student\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
@@ -186,7 +196,12 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+    <None Include="Resources\chemical laboratory_preview.jpg" />
+    <None Include="Resources\4_ScienceRocks-01.jpg" />
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
