@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxQuestions = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTimer = new System.Windows.Forms.Label();
             this.btnNextQuestion = new System.Windows.Forms.Button();
             this.radioChoice4 = new System.Windows.Forms.RadioButton();
@@ -43,10 +44,12 @@
             this.lblQuestionText = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBoxQuestions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnStartTest);
             this.groupBox1.Controls.Add(this.label2);
@@ -100,6 +103,8 @@
             // 
             // groupBoxQuestions
             // 
+            this.groupBoxQuestions.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBoxQuestions.Controls.Add(this.pictureBox1);
             this.groupBoxQuestions.Controls.Add(this.lblTimer);
             this.groupBoxQuestions.Controls.Add(this.btnNextQuestion);
             this.groupBoxQuestions.Controls.Add(this.radioChoice4);
@@ -115,6 +120,18 @@
             this.groupBoxQuestions.TabStop = false;
             this.groupBoxQuestions.Text = "Test";
             this.groupBoxQuestions.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Image = global::SE2015.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(671, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(272, 312);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // lblTimer
             // 
@@ -184,13 +201,14 @@
             // lblQuestionText
             // 
             this.lblQuestionText.AutoSize = true;
-            this.lblQuestionText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblQuestionText.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblQuestionText.ForeColor = System.Drawing.Color.SeaGreen;
             this.lblQuestionText.Location = new System.Drawing.Point(31, 32);
             this.lblQuestionText.MaximumSize = new System.Drawing.Size(500, 0);
             this.lblQuestionText.Name = "lblQuestionText";
-            this.lblQuestionText.Size = new System.Drawing.Size(61, 24);
+            this.lblQuestionText.Size = new System.Drawing.Size(69, 26);
             this.lblQuestionText.TabIndex = 0;
-            this.lblQuestionText.Text = "Soruu";
+            this.lblQuestionText.Text = "Soru 1";
             // 
             // frmTest
             // 
@@ -208,6 +226,7 @@
             this.groupBox1.PerformLayout();
             this.groupBoxQuestions.ResumeLayout(false);
             this.groupBoxQuestions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,7 +240,7 @@
         private System.Windows.Forms.GroupBox groupBoxQuestions;
         private System.Windows.Forms.Label lblQuestionText;
         private System.Windows.Forms.Label lblTimer;
-        public System.Windows.Forms.Button btnStartTest;
+        private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.RadioButton radioChoice4;
         public System.Windows.Forms.RadioButton radioChoice3;
         public System.Windows.Forms.RadioButton radioChoice2;

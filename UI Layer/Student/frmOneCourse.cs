@@ -17,15 +17,21 @@ namespace SE2015.UI_Layer.Student
         private Form selectedForm;
         private int courseIndex;
         private ToolStripMenuItem menu;
-      
 
-        public frmOneCourse(Panel panelFormContainer, Form selectedForm,int courseIndex,ToolStripMenuItem menu)
+
+        public frmOneCourse(Panel panelFormContainer, Form selectedForm, int courseIndex, ToolStripMenuItem menu)
         {
             InitializeComponent();
             this.panelFormContainer = panelFormContainer;
             this.selectedForm = selectedForm;
             this.courseIndex = courseIndex;
             this.menu = menu;
+            if (Login.tipi != "Öğretmen")
+            {
+                this.linkLabel4.Visible = false;
+                this.linkLabel3.Visible = false;
+
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -36,7 +42,7 @@ namespace SE2015.UI_Layer.Student
             selectedForm.TopLevel = false;
             panelFormContainer.Controls.Add(selectedForm);
             selectedForm.Show();
-                
+
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -62,5 +68,7 @@ namespace SE2015.UI_Layer.Student
             }
         }
     
+
+  
     }
 }

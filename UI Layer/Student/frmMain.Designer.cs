@@ -33,6 +33,7 @@
             this.konularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GirisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelFormContainer = new System.Windows.Forms.Panel();
             this.menuStrip.SuspendLayout();
@@ -45,10 +46,11 @@
             this.konularToolStripMenuItem,
             this.profilToolStripMenuItem,
             this.istatistiklerToolStripMenuItem,
+            this.GirisToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1215, 24);
+            this.menuStrip.Size = new System.Drawing.Size(1000, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -78,6 +80,13 @@
             this.istatistiklerToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
             // 
+            // GirisToolStripMenuItem
+            // 
+            this.GirisToolStripMenuItem.Name = "GirisToolStripMenuItem";
+            this.GirisToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.GirisToolStripMenuItem.Text = "Giris";
+            this.GirisToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
@@ -90,20 +99,20 @@
             this.panelFormContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormContainer.Location = new System.Drawing.Point(0, 24);
             this.panelFormContainer.Name = "panelFormContainer";
-            this.panelFormContainer.Size = new System.Drawing.Size(1215, 743);
+            this.panelFormContainer.Size = new System.Drawing.Size(1000, 588);
             this.panelFormContainer.TabIndex = 1;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1215, 767);
+            this.ClientSize = new System.Drawing.Size(1000, 612);
             this.Controls.Add(this.panelFormContainer);
             this.Controls.Add(this.menuStrip);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "frmMain";
             this.Text = "ScienceLab";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -116,10 +125,11 @@
 
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem konularToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem profilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.Panel panelFormContainer;
         private System.Windows.Forms.ToolStripMenuItem istatistiklerToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem konularToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem GirisToolStripMenuItem;
     }
 }

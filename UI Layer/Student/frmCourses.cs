@@ -25,16 +25,37 @@ namespace SE2015.UI_Layer.Student
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            clickCourse();    
-        }
-        public void clickCourse() {
-            selectedForm.Dispose();
+
+            if (Login.adi == null)
+            {
+                if (MessageBox.Show("Giris yapmalisiniz", "Uyarı", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    //Login'e gitmiyor ama arıza da çıkartmıyor..
+
+                    selectedForm.Dispose();
+                    selectedForm = new Login(toolStripMenuItem, selectedForm, panelFormContainer);
+                    toolStripMenuItem.Enabled = true;
+                    selectedForm.TopLevel = false;
+                    panelFormContainer.Controls.Add(selectedForm);
+                    selectedForm.Show();
+                }
+            }
+
+            else
+            {
+                selectedForm.Dispose();
             selectedForm = new frmOneCourse(panelFormContainer, selectedForm, 0, toolStripMenuItem);
             FormStateManager.Instance = selectedForm;
-            toolStripMenuItem.Enabled = true;
-            selectedForm.TopLevel = false;
-            panelFormContainer.Controls.Add(selectedForm);
-            selectedForm.Show();
+                toolStripMenuItem.Enabled = true;
+                selectedForm.TopLevel = false;
+                panelFormContainer.Controls.Add(selectedForm);
+                selectedForm.Show();
+            }
         }
+
+
+
+
+
     }
 }
