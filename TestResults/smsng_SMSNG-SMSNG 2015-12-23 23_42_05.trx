@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4bf19bc6-a5f8-4682-a559-3fd4202ef01e" name="smsng@SMSNG-SMSNG 2015-12-23 23:42:05" runUser="smsng-smsng\smsng" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="125f4e30-2029-4c74-aa74-3914b1a7b57d">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="smsng_SMSNG-SMSNG 2015-12-23 23_42_05">
+      <DeploymentItem filename="C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\bin\Debug\SE2015.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-12-23T23:42:05.3390346+02:00" queuing="2015-12-23T23:42:06.8860807+02:00" start="2015-12-23T23:42:06.9650852+02:00" finish="2015-12-23T23:42:07.7020978+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="RightChoiceTest" storage="c:\users\smsng\documents\visual studio 2010\projects\testproject\bin\debug\testproject.dll" id="cf3d8c8b-c308-230d-ed27-0b984af60fea">
+      <Execution id="7ea00b74-544a-420f-ad7c-a01dd1a73755" />
+      <TestMethod codeBase="C:/Users/smsng/Documents/Visual Studio 2010/Projects/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.TestingFormTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RightChoiceTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="cf3d8c8b-c308-230d-ed27-0b984af60fea" executionId="7ea00b74-544a-420f-ad7c-a01dd1a73755" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="7ea00b74-544a-420f-ad7c-a01dd1a73755" testId="cf3d8c8b-c308-230d-ed27-0b984af60fea" testName="RightChoiceTest" computerName="SMSNG-SMSNG" duration="00:00:00.1763114" startTime="2015-12-23T23:42:06.9730856+02:00" endTime="2015-12-23T23:42:07.5680951+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ea00b74-544a-420f-ad7c-a01dd1a73755">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject.TestingFormTest.RightChoiceTest threw exception: 
+System.NotImplementedException: Yöntem veya işlem uygulanmadı.</Message>
+          <StackTrace>    konum: SE2015.UI_Layer.Student.frmCourses.clickCourse() C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\UI Layer\Student\frmCourses.cs içinde: satır 63
+   konum: TestProject.TestingFormTest.RightChoiceTest() C:\Users\smsng\Documents\Visual Studio 2010\Projects\TestProject\TestingFormTest.cs içinde: satır 108
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

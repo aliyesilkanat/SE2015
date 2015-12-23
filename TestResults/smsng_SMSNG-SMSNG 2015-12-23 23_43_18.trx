@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="70a1ba93-418d-4daf-9776-3109ce01866d" name="smsng@SMSNG-SMSNG 2015-12-23 23:43:18" runUser="smsng-smsng\smsng" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="125f4e30-2029-4c74-aa74-3914b1a7b57d">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="smsng_SMSNG-SMSNG 2015-12-23 23_43_18">
+      <DeploymentItem filename="C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="C:\Users\smsng\Documents\Visual Studio 2010\Projects\SE2015\bin\Debug\SE2015.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-12-23T23:43:18.6765835+02:00" queuing="2015-12-23T23:43:18.7765836+02:00" start="2015-12-23T23:43:18.7765836+02:00" finish="2015-12-23T23:43:19.1165841+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="RightChoiceTest" storage="c:\users\smsng\documents\visual studio 2010\projects\testproject\bin\debug\testproject.dll" id="cf3d8c8b-c308-230d-ed27-0b984af60fea">
+      <Execution id="f7ff98c6-cabb-489f-97a8-cbada37c207b" />
+      <TestMethod codeBase="C:/Users/smsng/Documents/Visual Studio 2010/Projects/TestProject/bin/Debug/TestProject.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject.TestingFormTest, TestProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RightChoiceTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="cf3d8c8b-c308-230d-ed27-0b984af60fea" executionId="f7ff98c6-cabb-489f-97a8-cbada37c207b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f7ff98c6-cabb-489f-97a8-cbada37c207b" testId="cf3d8c8b-c308-230d-ed27-0b984af60fea" testName="RightChoiceTest" computerName="SMSNG-SMSNG" duration="00:00:00.1379552" startTime="2015-12-23T23:43:18.7865836+02:00" endTime="2015-12-23T23:43:19.1065841+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7ff98c6-cabb-489f-97a8-cbada37c207b">
+    </UnitTestResult>
+  </Results>
+</TestRun>

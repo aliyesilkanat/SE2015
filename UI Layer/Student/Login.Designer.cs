@@ -247,7 +247,7 @@
             // 
             this.kayitUyari.AutoSize = true;
             this.kayitUyari.ForeColor = System.Drawing.Color.Red;
-            this.kayitUyari.Location = new System.Drawing.Point(370, 267);
+            this.kayitUyari.Location = new System.Drawing.Point(370, 280);
             this.kayitUyari.Name = "kayitUyari";
             this.kayitUyari.Size = new System.Drawing.Size(0, 13);
             this.kayitUyari.TabIndex = 19;

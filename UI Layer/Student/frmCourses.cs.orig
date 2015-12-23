@@ -25,6 +25,18 @@ namespace SE2015.UI_Layer.Student
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+<<<<<<< HEAD
+            clickCourse();    
+        }
+        public void clickCourse() {
+            selectedForm.Dispose();
+            selectedForm = new frmOneCourse(panelFormContainer, selectedForm, 0, toolStripMenuItem);
+            FormStateManager.Instance = selectedForm;
+            toolStripMenuItem.Enabled = true;
+            selectedForm.TopLevel = false;
+            panelFormContainer.Controls.Add(selectedForm);
+            selectedForm.Show();
+=======
 
             if (Login.adi == null)
             {
@@ -44,29 +56,18 @@ namespace SE2015.UI_Layer.Student
             else
             {
                 selectedForm.Dispose();
-            selectedForm = new frmOneCourse(panelFormContainer, selectedForm, 0, toolStripMenuItem);
-            FormStateManager.Instance = selectedForm;
+                selectedForm = new frmOneCourse(panelFormContainer, selectedForm, 0, toolStripMenuItem);
                 toolStripMenuItem.Enabled = true;
                 selectedForm.TopLevel = false;
                 panelFormContainer.Controls.Add(selectedForm);
                 selectedForm.Show();
             }
+>>>>>>> 3e59481133512ebb0ceda261d714b43984d977d2
         }
 
 
 
 
 
-
-        internal  void clickCourse()
-        {
-            selectedForm.Dispose();
-            selectedForm = new frmOneCourse(panelFormContainer, selectedForm, 0, toolStripMenuItem);
-            FormStateManager.Instance = selectedForm;
-            toolStripMenuItem.Enabled = true;
-            selectedForm.TopLevel = false;
-            panelFormContainer.Controls.Add(selectedForm);
-            selectedForm.Show();
-        }
     }
 }

@@ -37,7 +37,7 @@ namespace SE2015.UI_Layer.Student
             if (adi == kullanici_Adi)
             {
                 selectedForm.Dispose();
-                selectedForm = new frmCourses(menu, selectedForm, panelFormContainer);
+                selectedForm = new frmCourses(menu, ref selectedForm, panelFormContainer);
                 menu.Enabled = true;
                 selectedForm.TopLevel = false;
                 panelFormContainer.Controls.Add(selectedForm);

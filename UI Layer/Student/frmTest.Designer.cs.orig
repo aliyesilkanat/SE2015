@@ -34,7 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxQuestions = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
+=======
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+>>>>>>> 3e59481133512ebb0ceda261d714b43984d977d2
             this.lblTimer = new System.Windows.Forms.Label();
             this.btnNextQuestion = new System.Windows.Forms.Button();
             this.radioChoice4 = new System.Windows.Forms.RadioButton();
@@ -121,6 +124,31 @@
             this.groupBoxQuestions.Text = "Test";
             this.groupBoxQuestions.Visible = false;
             // 
+<<<<<<< HEAD
+            // lblTimer
+            // 
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTimer.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblTimer.Location = new System.Drawing.Point(27, 217);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(51, 20);
+            this.lblTimer.TabIndex = 3;
+            this.lblTimer.Text = "label3";
+            // 
+            // btnNextQuestion
+            // 
+            this.btnNextQuestion.Location = new System.Drawing.Point(436, 176);
+            this.btnNextQuestion.Name = "btnNextQuestion";
+            this.btnNextQuestion.Size = new System.Drawing.Size(92, 23);
+            this.btnNextQuestion.TabIndex = 2;
+            this.btnNextQuestion.Text = "İşaretle ve Geç";
+            this.btnNextQuestion.UseVisualStyleBackColor = true;
+            this.btnNextQuestion.Click += new System.EventHandler(this.btnNextQuestion_Click);
+            // 
+            // radioChoice4
+            // 
+=======
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -156,6 +184,7 @@
             // 
             // radioChoice4
             // 
+>>>>>>> 3e59481133512ebb0ceda261d714b43984d977d2
             this.radioChoice4.AutoSize = true;
             this.radioChoice4.Location = new System.Drawing.Point(331, 176);
             this.radioChoice4.Name = "radioChoice4";
@@ -201,6 +230,15 @@
             // lblQuestionText
             // 
             this.lblQuestionText.AutoSize = true;
+<<<<<<< HEAD
+            this.lblQuestionText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblQuestionText.Location = new System.Drawing.Point(31, 32);
+            this.lblQuestionText.MaximumSize = new System.Drawing.Size(500, 0);
+            this.lblQuestionText.Name = "lblQuestionText";
+            this.lblQuestionText.Size = new System.Drawing.Size(61, 24);
+            this.lblQuestionText.TabIndex = 0;
+            this.lblQuestionText.Text = "Soruu";
+=======
             this.lblQuestionText.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblQuestionText.ForeColor = System.Drawing.Color.SeaGreen;
             this.lblQuestionText.Location = new System.Drawing.Point(31, 32);
@@ -209,6 +247,7 @@
             this.lblQuestionText.Size = new System.Drawing.Size(69, 26);
             this.lblQuestionText.TabIndex = 0;
             this.lblQuestionText.Text = "Soru 1";
+>>>>>>> 3e59481133512ebb0ceda261d714b43984d977d2
             // 
             // frmTest
             // 
@@ -240,12 +279,15 @@
         private System.Windows.Forms.GroupBox groupBoxQuestions;
         private System.Windows.Forms.Label lblQuestionText;
         private System.Windows.Forms.Label lblTimer;
-        private System.Windows.Forms.PictureBox pictureBox1;
+<<<<<<< HEAD
+        public System.Windows.Forms.Button btnStartTest;
         public System.Windows.Forms.RadioButton radioChoice4;
         public System.Windows.Forms.RadioButton radioChoice3;
         public System.Windows.Forms.RadioButton radioChoice2;
         public System.Windows.Forms.RadioButton radioChoice1;
         public System.Windows.Forms.Button btnNextQuestion;
-        public System.Windows.Forms.Button btnStartTest;
+=======
+        private System.Windows.Forms.PictureBox pictureBox1;
+>>>>>>> 3e59481133512ebb0ceda261d714b43984d977d2
     }
 }

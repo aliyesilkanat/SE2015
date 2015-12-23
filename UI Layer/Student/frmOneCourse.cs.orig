@@ -48,11 +48,10 @@ namespace SE2015.UI_Layer.Student
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
-
-            linkLabel2Click();
+          
+                linkLabel2Click();
         }
-        public void linkLabel2Click()
-        {
+        public void linkLabel2Click() {
             if (!StudentTestValidation.Instance().StudentTookTest)
             {
 
@@ -68,8 +67,11 @@ namespace SE2015.UI_Layer.Student
                 MessageBox.Show("Bu testi daha önce çözdünüz.");
             }
         }
+<<<<<<< HEAD
+    
+=======
 
 
-
+>>>>>>> 3e59481133512ebb0ceda261d714b43984d977d2
     }
 }
